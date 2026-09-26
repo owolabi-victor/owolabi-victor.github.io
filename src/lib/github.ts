@@ -10,8 +10,9 @@ export interface Repo {
   fork: boolean;
 }
 
-// The 5 projects shown on the portfolio, in display order
+// The 6 projects shown on the portfolio, in display order
 export const FEATURED_PROJECTS = [
+  "steady",
   "Ephemeral-Sandbox-SDK",
   "photoshare",
   "phonebook",
@@ -20,6 +21,8 @@ export const FEATURED_PROJECTS = [
 ];
 
 export const DESCRIPTIONS: Record<string, string> = {
+  steady:
+    "Aging-in-place check-in and safety-alert platform: Spring Boot microservices behind a Kafka Streams pipeline that detects missed check-ins via windowed, wall-clock-driven aggregation. Ships native iOS (SwiftUI) and Android (Kotlin/Compose) clients with offline-safe check-in queues, backed by a fully tested, Dockerized deployment.",
   "Ephemeral-Sandbox-SDK":
     "TypeScript SDK for programmatically provisioning isolated Docker development environments. Designed to eliminate environment drift in CI pipelines and multi-tenant workflows — spin up a fully configured sandbox, use it, destroy it.",
   photoshare:
@@ -33,6 +36,7 @@ export const DESCRIPTIONS: Record<string, string> = {
 };
 
 export const CATEGORIES: Record<string, string> = {
+  steady: "Systems",
   "Ephemeral-Sandbox-SDK": "DevTools",
   photoshare: "Systems",
   phonebook: "Web",
